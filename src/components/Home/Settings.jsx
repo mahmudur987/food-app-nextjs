@@ -35,10 +35,10 @@ const Settings = () => {
               </p>
               <p className="relative">
                 <span
-                  className="absolute z-10 h-2 top-2 rounded-lg "
+                  className="absolute z-10 h-1 top-[13px] rounded-lg "
                   style={{
                     backgroundColor: "rgba(229, 85, 39, 1)",
-                    width: `${value - 5}%`,
+                    width: `${value - 2}%`,
                   }}
                 >
                   .{" "}
@@ -57,7 +57,7 @@ const Settings = () => {
             <div className="w-full flex flex-col gap-2">
               <p className="font-bold">Choose Vitamin Type</p>
               <select className="select w-full font-bold bg-base-200">
-                <option className="w-full font-bold bg-base-200" selected>
+                <option className="w-full font-semibold bg-base-200" selected>
                   All Vitamins
                 </option>
                 <option>Vitamin A</option>
@@ -73,7 +73,7 @@ const Settings = () => {
               <input
                 type="checkbox"
                 className="toggle border-[1px] border-gray-300   bg-gray-300"
-                checked={true}
+                checked={false}
               />
             </div>
           </div>

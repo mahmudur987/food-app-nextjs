@@ -27,7 +27,7 @@
 .inputRange {
   -webkit-appearance: none;
   width: 220px;
-  height: 10px;
+  height: 5px;
   border-radius: 5px;
   background: #ddd;
   outline: none;
@@ -43,8 +43,8 @@
 .inputRange::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: rgba(229, 85, 39, 1);
   cursor: pointer;
@@ -56,4 +56,8 @@
   border-radius: 50%;
   background: rgba(229, 85, 39, 1);
   cursor: pointer;
+}
+
+input {
+  outline: none;
 }

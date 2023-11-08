@@ -19,7 +19,9 @@ const Navbar = () => {
             className="navInput text-sm "
             placeholder="Search Best Food"
           />
-          <Image src={img2} height={20} width={40} alt="website name" />
+          <Link href={"/search"}>
+            <Image src={img2} height={20} width={40} alt="website name" />
+          </Link>
         </p>
       </div>
       <div className="">
