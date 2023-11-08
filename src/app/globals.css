@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=DM+Sans:opsz@9..40&family=Gabarito&family=Inter&family=Martian+Mono:wght@300;500&family=Montserrat&family=Poppins&family=Roboto:ital@0;1&family=Skranji&display=swap");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +18,42 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.navInput::placeholder {
+  color: #101010;
+  opacity: 1;
+}
+
+/* styles.css */
+.inputRange {
+  -webkit-appearance: none;
+  width: 220px;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.inputRange:hover {
+  opacity: 1;
+}
+
+.inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(229, 85, 39, 1);
+  cursor: pointer;
+}
+
+.inputRange::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(229, 85, 39, 1);
+  cursor: pointer;
 }
